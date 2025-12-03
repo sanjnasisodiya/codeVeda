@@ -37,8 +37,8 @@ Verify:
 git --version
 
 Configure Git
-git config --global user.name ""
-git config --global user.email ""
+git config --global user.name "Your Name"
+git config --global user.email "youremail@example.com"
 
 Basic Git workflow
 git init
@@ -49,22 +49,21 @@ Connect to GitHub
 Create a new repo (empty)
 Connect:
 git branch -M main
-git remote add origin repoUrl
+git remote add origin <repo-url>
 git push -u origin main
 
 3 Basic Terminal Commands
 Important commands should know
-ls -> files list
-cd folder -> change directory
-mkdir -> create folder
-rm file -> delete file
-clear -> clear terminal
+ls → files list
+cd folder → change directory
+mkdir new → create folder
+rm file → delete file
+clear → clear terminal
 
 4 Install a Database
 Option A: MongoDB
 Install MongoDB Community Server
 https://www.mongodb.com/try/download/community
-
 GUI (optional): MongoDB Compass
 
 Option B: MySQL
