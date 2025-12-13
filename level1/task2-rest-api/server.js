@@ -1,13 +1,16 @@
 import express from "express";
 import productRoutes from "./routes/productRoutes.js";
 import userRoutes from "./routes/userRoutes.js";
+import cors from "cors";
 const app = express();
 
+//cors
+app.use(cors());
 //middleware
 app.use(express.json());
 
 //routes
-app.use("/api/product", productRoutes);
+app.use("/api/products", productRoutes);
 app.use("/api/user", userRoutes);
 
 app.get("/", (req, res) => {

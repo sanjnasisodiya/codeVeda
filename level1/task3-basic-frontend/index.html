@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Peoduct App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Products App(HTML+CSS+Javascript)</h1>
+
+    <!-- Add product form -->
+    <div class="form-container">
+      <h2>Add New Products</h2>
+      <input type="text" id="name" placeholder="Product Name" />
+      <input type="number" id="price" placeholder="Product Price" />
+      <button onclick="createProduct()">Add Product</button>
+    </div>
+
+    <!-- Display products -->
+    <div class="product-list">
+      <h2>Products</h2>
+      <ul id="productContainer"></ul>
+    </div>
+
+    <!-- update -->
+    <div id="updateSection" style="display: none; margin-top: 20px">
+      <h2>Update Product</h2>
+      <input type="hidden" id="updateId" />
+      <input type="text" id="updateName" placeholder="Product Name" />
+      <input type="number" id="updatePrice" placeholder="Price" />
+      <button onclick="updateProduct()">Update</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

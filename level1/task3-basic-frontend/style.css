@@ -1,0 +1,66 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+  background: #f2f2f2;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.form-container,
+.product-list {
+  max-width: 500px;
+  background: white;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgpa(0, 0, 0, 0.1);
+}
+#updateSection {
+  display: none;
+  background: #ffffff;
+  padding: 20px;
+  width: 300px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+button {
+  width: 50%;
+  padding: 10px;
+  margin: 10px;
+  background: #0066ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #004fcc;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #e9e9e9;
+  padding: 12px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}

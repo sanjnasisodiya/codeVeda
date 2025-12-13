@@ -1,7 +1,7 @@
 import express from "express";
 import {
   getProducts,
-  getProductsById,
+  getProductById,
   createProduct,
   updateProduct,
   deleteProduct,
@@ -10,7 +10,7 @@ import {
 const router = express.Router();
 
 router.get("/", getProducts);
-router.get("/:id", getProductsById);
+router.get("/:id", getProductById);
 router.post("/", createProduct);
 router.put("/:id", updateProduct);
 router.delete("/:id", deleteProduct);
